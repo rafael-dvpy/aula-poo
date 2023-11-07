@@ -15,7 +15,7 @@ export class Transaction {
     }
 
     set valor (v: number) {
-        this._valor =
+        this._valor = v
     }
 }
 

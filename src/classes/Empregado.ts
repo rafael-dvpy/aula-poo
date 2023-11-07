@@ -77,6 +77,6 @@
         }
     }
 
-    const ca1 = new Cachorro("Rudolf")
+    const ca1 = new Cachorro("Rudolf", "labrador")
 
     ca1.fala()
