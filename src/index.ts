@@ -1,8 +1,22 @@
-import { BankAccount } from "./classes/BankAccount";
-import { Transaction } from "./classes/Trasaction";
+// 1 objeto
+// 3 propriedades
+// 1 método com parámetro
+// 1 método sem parámetro
 
-const ba1 = new BankAccount("Rafael", "312hg3ihj12687312", "1231231267312");
-const ba2 = new BankAccount("Rafael", "312hg3ihj12687312", "1231231267312");
-const tr1 = new Transaction("12g312fg", "hj312jh321", 1000);
+const cachorro = {
+    nome: "Adriano",
+    idade: 10,
+    filhotes: ["Bob"],
+    fala (frase: string) {
+        console.log("Olá", frase)
+    },
+    envelhecer () {
+        this.idade += 1
+    },
+    anosDeCachorro () {
+        const resultado = this.idade * 7
+        console.log(resultado)
+    }
+}
 
-console.log(ba1)
+cachorro.anosDeCachorro()
